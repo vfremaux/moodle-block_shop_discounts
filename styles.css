@@ -1,0 +1,54 @@
+
+input.order-detail {
+    width: initial;
+}
+
+
+.shop-discount {
+    margin-bottom: 15px;
+}
+
+.discount-item input {
+    
+}
+
+.discount-item input[type=text] {
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: #aaa;
+    width: 100%;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.discount-item.not-eligible {
+    opacity: 50%;
+}
+
+.discount-item.has-value {
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+}
+
+.discount-item.has-value .active-code.failed {
+    color: #ffaaaa;
+}
+
+.active-code.failed::before {
+    content: "\f057 ";
+    font-family: "FontAwesome";
+    margin-right: 10px;
+}
+
+.discount-item.has-value .active-code.verified {
+    color: #88cc88;
+}
+
+.active-code.verified::before {
+    content: "\f058 ";
+    font-family: "FontAwesome";
+    margin-right: 10px;
+}
+
